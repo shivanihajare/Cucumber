@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="Features", glue="definitions", tags= {"@Sanity"})
+@CucumberOptions(plugin = {"json:target/cucumber.json"}, features="Features", glue="definitions", tags= {"@Sanity"})
 public class OnlineShopRunner {
 
 }
